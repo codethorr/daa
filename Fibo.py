@@ -20,6 +20,8 @@ def fiboRecur(n):
 if __name__ == "__main__":
     num = int(input("Enter a number: "))
     init = time.time()
-    print(f"Using recursions value of fib({num}) is {fiboRecur(num)}")
-    print(f"Using iterations value of fib({num}) is {fiboIter(num)}")
+    for i in range(num):
+        print(fiboRecur(i))
+    for i in range(num):
+        print(fiboIter(i))
     print(f"It took {time.time() - init} seconds")
